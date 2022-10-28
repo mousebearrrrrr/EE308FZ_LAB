@@ -53,26 +53,26 @@ void Lv2(string searchword)
 	
 }
 
-int a=0;
+int x=0;
 void Lv3and4(string searchword)		
 {
 	
 	if(Verify(searchword, "else if")==1){
-		a = 2;
+		x = 2;
 	}
 	else
 	{
 		if(Verify(searchword, "if")==1){
-			a = 1;
+			x = 1;
 		}
         if(Verify(searchword, "else")==1)
 		{
-			if(a == 1){
+			if(x == 1){
 				ifelse_num++;
 			}
 			else	
 			{
-				if(a == 2){
+				if(x == 2){
 					if_elseif_else_num++;
 				}
 			}
